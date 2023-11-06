@@ -4,6 +4,8 @@ Repo for codes from 404 PP1  course
 
 # Как установить G++ под VSCode:
 
+[Видеоинструкция](https://www.youtube.com/watch?si=EyJrYap__GX1fkF3&v=1qN9PQ9wg3E&feature=youtu.be)
+
 ### 1. Скачать и установить MinGW
 
 1.1. Установка для Windows
