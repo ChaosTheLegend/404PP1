@@ -12,18 +12,16 @@ int main() {
 
     for (int i = 2; i <= n; ++i) {
 
-        bool isPrime = true;
-
-        for (int j = 2; j*j <= i; ++j) {
-            if(i%j == 0){
-                isPrime = false;
+        bool is_prime = true;
+        for (int j = 2; j < i; ++j) {
+            if(i % j == 0){
+                is_prime = false;
                 break;
             }
         }
 
-
-        if(isPrime){
-            cout << i << " is prime" << endl;
+        if(is_prime){
+            cout << i << " ";
         }
     }
 
