@@ -6,11 +6,20 @@ using namespace std;
 
 int main() {
 
-    //Find & stoi
-    string s = "567890765";
+    string s1 = "abc";
+    string s2 = "abc";
 
-    int value = stoi(s);
+    if(s1.length() != s2.length()){
+        cout << "NO";
+        return 0;
+    }
 
-    cout << value + 11 << endl;
+    for (int i = 0; i < s1.length(); ++i) {
+        if(s1[i] != s2[i]){
+            cout << "NO";
+            return 0;
+        }
+    }
 
+    cout << "YES";
 }
