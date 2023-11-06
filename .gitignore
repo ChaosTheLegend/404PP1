@@ -33,6 +33,6 @@
 
 # idea project files
 .idea
-
+/Labs&Quizes/
 /cmake-build-debug/
 
