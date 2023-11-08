@@ -15,15 +15,12 @@ int main() {
         cin >> a[i];
     }
 
-
-    int max = INT32_MIN;
     int max_index = 0;
 
     for (int i = 0; i < n; ++i) {
         int number = a[i];
 
-        if(number > max) {
-            max = number;
+        if(number > a[max_index]) {
             max_index = i;
         }
     }
