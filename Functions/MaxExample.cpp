@@ -3,51 +3,62 @@
 
 using namespace std;
 
-
 int beer = 10;
 
+int square(int x){
+    return x*x;
+}
+
+void printArray(int* a, int n){
+    for (int i = 0; i < n; ++i) {
+        cout << a[i] << " ";
+    }
+
+    square(15);
+
+}
+
+
+
+
+
+
+int FindMax(int* a, int n){
+
+    int max = a[0];
+
+    for (int i = 0; i < n; ++i) {
+        if(a[i] > max) max = a[i];
+    }
+
+    beer/=10;
+
+
+    return max;
+}
 
 string addA(string a){
-
-    beer += 10;
 
     cout << a << endl;
 
     a.append("A");
     cout << a << endl;
 
+    beer += 10;
 
     return a;
 }
 
 
-int FindMax(int* a, int n){
-    int max = INT_MIN;
-
-
-    beer -= 10;
-
-    for (int i = 0; i < n; ++i) {
-        if(a[i] > max) max = a[i];
-    }
-
-    return max;
-}
-
-
 int main() {
 
-    string s = "hello world";
+    string a = "Hello World";
 
+    a = addA(a);
+    a = addA(a);
+    a = addA(a);
 
-
-    beer /= 10;
-
-    s = addA(s);
-
-
-
-    cout << s;
+    cout << a;
 
 }
 
