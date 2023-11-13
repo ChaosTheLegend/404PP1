@@ -6,10 +6,16 @@ using namespace std;
 
 int main() {
 
-    string s1 = "abc";
-    string s2 = "abc";
+    string s1 = "Hello world";
 
-    if(s1.length() != s2.length()){
+    string world = s1.substr(2, 5);
+
+    cout << world;
+
+
+
+    /*
+    if(s1.length() != s2.len1gth()){
         cout << "NO";
         return 0;
     }
@@ -20,6 +26,6 @@ int main() {
             return 0;
         }
     }
-
-    cout << "YES";
+    */
+    //cout << "YES";
 }

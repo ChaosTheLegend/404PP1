@@ -7,12 +7,19 @@ bool binary_search(int* arr, int a, int l, int r){
 
     if(l > r) return false;
 
-    int mean = (l+r)/2;
+    int mid = (l+r)/2;
 
-    if(a == arr[mean]) return true;
+    if(arr[mid] == a){
+        return true;
+    }
 
-    if(a > mean) return binary_search(arr, a, mean +1, r);
-    else return binary_search(arr, a, l, mean -1);
+    if(a > arr[mid]){
+        return binary_search(arr, a, mid+1, r);
+    }
+    else{
+        return binary_search(arr, a, l, mid-1);
+    }
+
 }
 
 int main() {

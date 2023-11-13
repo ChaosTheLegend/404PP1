@@ -6,6 +6,8 @@ using namespace std;
 int beer = 10;
 
 int square(int x){
+
+
     return x*x;
 }
 
@@ -13,9 +15,7 @@ void printArray(int* a, int n){
     for (int i = 0; i < n; ++i) {
         cout << a[i] << " ";
     }
-
-    square(15);
-
+    cout << endl;
 }
 
 
@@ -30,9 +30,6 @@ int FindMax(int* a, int n){
     for (int i = 0; i < n; ++i) {
         if(a[i] > max) max = a[i];
     }
-
-    beer/=10;
-
 
     return max;
 }
@@ -54,11 +51,11 @@ int main() {
 
     string a = "Hello World";
 
-    a = addA(a);
-    a = addA(a);
-    a = addA(a);
+    int arr[] = {1, 2, 4, 7};
 
-    cout << a;
+    int b = FindMax(arr, 4);
+
+    cout << b;
 
 }
 
