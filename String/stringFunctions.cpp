@@ -3,13 +3,20 @@
 
 using namespace std;
 
-
 int main() {
 
-    string s;
+    string s = "abacaba";
 
-    getline(cin, s);
+    string b = "10";
+
+    int a = stoi(b);
+
+    a+= 111;
 
 
-    cout << s;
+    s.erase(1, 3);
+
+    s.append("ccc");
+
+    cout << s << " " << a;
 }
