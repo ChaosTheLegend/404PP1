@@ -3,6 +3,9 @@
 #include <algorithm>
 using namespace std;
 
+
+
+
 int inf_sum(int sum){
 
     int a;

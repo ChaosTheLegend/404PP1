@@ -3,6 +3,9 @@
 #include <algorithm>
 using namespace std;
 
+
+
+
 bool is_palindrome(string s){
 
     if(s.length() <= 1) return true;
