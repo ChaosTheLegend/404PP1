@@ -7,7 +7,6 @@ int beer = 10;
 
 int square(int x){
 
-
     return x*x;
 }
 
@@ -19,11 +18,9 @@ void printArray(int* a, int n){
 }
 
 
-
-
-
-
 int FindMax(int* a, int n){
+
+    int cheese = 20;
 
     int max = a[0];
 
@@ -46,8 +43,9 @@ string addA(string a){
     return a;
 }
 
+void stupidFunc(){
 
-int main() {
+    beer -= 5;
 
     string a = "Hello World";
 
@@ -56,7 +54,11 @@ int main() {
     int b = FindMax(arr, 4);
 
     cout << b;
+}
 
+
+int main() {
+    stupidFunc();
 }
 
 
