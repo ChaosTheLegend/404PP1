@@ -23,7 +23,9 @@ int fib(int n){
 
 int main() {
 
-    cout << sum(-5, -10);
+    int n;
+    cin >> n;
+    cout << fib(n);
 }
 
 

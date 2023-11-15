@@ -4,9 +4,6 @@
 using namespace std;
 
 
-
-
-
 string int_to_letter(int a){
     if(a < 10) return to_string(a);
 
@@ -25,9 +22,13 @@ string to_k_nary(int n, int k){
 
     string result = "";
 
-    result.append(to_k_nary(n/k, k));
+
 
     result.append(int_to_letter(n%k));
+
+    result.append(to_k_nary(n/k, k));
+
+
 
     return result;
 }

@@ -20,6 +20,8 @@ void bobble_sort(int* a, int n){
         if(a[i] > a[i+1]) swap(a[i], a[i+1]);
     }
 
+
+
     bobble_sort(a, n-1);
 }
 
@@ -33,11 +35,11 @@ int main() {
 
     bobble_sort(a, n);
 
-
-
     int b = times_cheated(a, n, k, 0);
 
-    if(b >= 1) {
+    if(a[0] < k) b+=1;
+
+    if(b >= 2) {
         cout << "cheater";
         return 0;
     }
