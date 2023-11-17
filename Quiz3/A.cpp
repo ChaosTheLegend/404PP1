@@ -7,8 +7,8 @@ int main() {
 
     string s;
     getline(cin, s);
-
     int length = s.length();
+
 
     string output[length];
 

@@ -22,12 +22,14 @@ int main() {
 
     for (int i = 0; i < s.length(); ++i) {
         char c = s[i];
+
         if(count.find(c) != count.end()){
             count[c]++;
         }
     }
 
-    for (auto it = count.begin(); it != count.end(); ++it) {
+    for (auto it = count.begin();
+    it != count.end(); ++it) {
         cout << it->first << " " << it->second << endl;
     }
 
