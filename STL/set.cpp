@@ -28,16 +28,19 @@ int main() {
     s.insert(5);
     s.insert(4);
     s.insert(3);
+    int b;
+    cin >> b;
 
 
+    auto a = s.find(b);
 
-    int a;
-    cin >> a;
+
     int oldSize = s.size();
-    s.insert(a);
+    s.insert(b);
     if(oldSize == s.size()) cout << "Found";
-    else {
+    else{
         cout << "Not found";
-        s.erase(a);
+        s.erase(b);
     }
+
 }

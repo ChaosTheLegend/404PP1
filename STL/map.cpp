@@ -32,12 +32,13 @@ int main() {
 
     map<string, int> phoneBook;
 
-
     phoneBook["KBTU"] = 174581;
     phoneBook["Kaspi"] = 43342;
 
+
     for (auto i = phoneBook.begin(); i != phoneBook.end(); ++i) {
-        //pair<string, int> p = *i;
+        pair<string, int> p = *i;
+
         cout << i->first << " " << i->second << endl;
     }
 
