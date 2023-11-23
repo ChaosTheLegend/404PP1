@@ -28,8 +28,7 @@ int main() {
         }
     }
 
-    for (auto it = count.begin();
-    it != count.end(); ++it) {
+    for (map<char, int>::iterator it = count.begin(); it != count.end(); ++it) {
         cout << it->first << " " << it->second << endl;
     }
 
