@@ -25,7 +25,6 @@ int main() {
         v.push_back(a);
     }
 
-
     int k;
     cin >> k;
 

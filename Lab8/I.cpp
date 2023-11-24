@@ -29,6 +29,8 @@ int main() {
     cin >> k;
 
     auto a = find(v.begin(), v.end(), k);
+
+
     if(a == v.end()) cout << "No";
     else cout << "Yes";
 

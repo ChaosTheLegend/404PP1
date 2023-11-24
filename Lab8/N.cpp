@@ -1,8 +1,7 @@
-#include <string>
 #include <iostream>
-#include <vector>
 #include <algorithm>
 #include <set>
+
 using namespace std;
 
 
@@ -11,6 +10,7 @@ int main() {
     int n;
     cin >> n;
 
+
     for (int i = 0; i < n; ++i) {
         int a;
         cin >> a;
@@ -18,12 +18,8 @@ int main() {
     }
 
     for (auto i = s.begin(); i != s.end(); ++i) {
-        if(*i%2==0){
-            s.erase(i);
+        if(*i%2==1){
+            cout << *i << " ";
         }
-    }
-
-    for (auto i = s.begin(); i != s.end(); ++i) {
-        cout << *i << " ";
     }
 }
