@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <set>
+#include <map>
 
 using namespace std;
 
@@ -16,28 +16,30 @@ void print_vector(vector<int> &v){
 
 int main() {
 
-    vector<int> v;
+    map<int,int> count;
+
+    //{1, 1}
+    //{2, 2}
+    //{5, 4}
 
     int n;
     cin >> n;
-
     for (int i = 0; i < n; ++i) {
         int a;
         cin >> a;
-        v.push_back(a);
+        if(count.find(a) != count.end()){
+            count[a]++;
+        }
+        else{
+            count[a] = 1;
+        }
     }
 
+    int s = 0;
 
-    sort(v.begin(), v.end(),
-         [](int a, int b){
-             if(a%2 == 0 && b%2 == 0) return true;
-             if(a%2 == 1 && b%2 == 1) return a < b;
+    for (auto i = count.begin(); i != count.end(); ++i) {
+        if(i->second >= 2) s++;
+    }
 
-             if(a%2 == 0) return true;
-             if(b%2 == 0) return false;
-         }
-    );
-
-
-    print_vector(v);
+    cout << s;
 }

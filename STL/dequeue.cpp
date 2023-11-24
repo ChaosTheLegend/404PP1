@@ -18,15 +18,14 @@ int main() {
 
     deq.push_front(1);
 
-    //deq.pop_back();
 
 
-    //deq.pop_front();
 
 
     deq.push_front(-10);
 
-    deq.push_back(100);
+    deq.pop_back();
+    deq.pop_front();
 
     for (auto i = deq.begin(); i != deq.end(); ++i) {
         cout << *i << " ";

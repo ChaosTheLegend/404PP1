@@ -19,8 +19,9 @@ int main() {
     queue1.push(3);
 
 
-    queue1.pop();
 
-
-    cout << queue1.front() << " " << queue1.back();
+    while (!queue1.empty()){
+        cout  << queue1.front() << " ";
+        queue1.pop();
+    }
 }

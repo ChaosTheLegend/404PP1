@@ -22,12 +22,11 @@ int main() {
 
     sort(v.begin(), v.end(),
          [](pair<int,int> a, pair<int,int> b){
-                    if(a.first < b.first) return true;
-                    if(a.first > b.first) return false;
+                if(a.first < b.first) return true;
+                if(a.first > b.first) return false;
 
-                    if(a.second < b.second) return true;
-                    else return false;
-                }
+                return a.second < b.second;
+            }
          );
 
 

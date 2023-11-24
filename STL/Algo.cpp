@@ -16,12 +16,9 @@ void print_vector(vector<int> &v){
 int main() {
     vector<int> v = {5, 6, 18, 2, 3, 8};
 
-    reverse(v.begin()+1, v.end()-1);
-
-    sort(v.begin(), v.end());
-
-    swap(v[0], v[1]);
+    sort(v.begin(), v.end(), [](int a, int b){
+        return a%4 < b%4;
+    });
 
     print_vector(v);
-
 }
