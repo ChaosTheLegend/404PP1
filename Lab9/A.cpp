@@ -25,13 +25,12 @@ int main() {
                     if(a.first < b.first) return true;
                     if(a.first > b.first) return false;
 
-                    if(a.second < b.second) return true;
-                    else return false;
+                    return a.second < b.second;
                 }
          );
 
 
-    for(auto i = v.begin(); i != v.end(); ++i){
+    for(vector<pair<int,int>> :: iterator i = v.begin(); i != v.end(); ++i){
         cout << i->first << " " << i->second << endl;
     }
 }

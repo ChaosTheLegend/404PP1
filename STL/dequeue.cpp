@@ -14,19 +14,21 @@ int main() {
     deq.push_back(3);
     deq.push_back(2);
 
-    // {4 , 3 , 2}
 
     deq.push_front(1);
 
-    //deq.pop_back();
+
+    // {1, 4 , 3 , 2}
+
+    deq.pop_back();
 
 
-    //deq.pop_front();
+    deq.pop_front();
 
 
-    deq.push_front(-10);
+    //deq.push_front(-10);
 
-    deq.push_back(100);
+    //deq.push_back(100);
 
     for (auto i = deq.begin(); i != deq.end(); ++i) {
         cout << *i << " ";

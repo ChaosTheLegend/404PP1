@@ -21,6 +21,11 @@ int main() {
 
     queue1.pop();
 
+    while (!queue1.empty()){
+        cout << queue1.front() << " ";
+        queue1.pop();
+    }
 
-    cout << queue1.front() << " " << queue1.back();
+
+    //cout << queue1.front() << " " << queue1.back();
 }

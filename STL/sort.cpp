@@ -16,7 +16,10 @@ void print_vector(vector<int> &v){
 int main() {
     vector<int> v = {5, 6, 18, 2, 3, 8};
 
-    sort(v.begin(), v.end(), [](int a, int b){return a%4 > b%4;});
+    sort(v.begin(), v.end(), [](int a, int b){
+        return a > b;
+    });
+
 
     print_vector(v);
 }

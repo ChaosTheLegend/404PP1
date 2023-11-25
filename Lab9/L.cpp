@@ -30,7 +30,8 @@ int main() {
     // {<0,2>}
     // {<3,3>}
 
-    sort(v.begin(), v.end(), [](pair<int, int> a, pair<int, int> b){
+    sort(v.begin(), v.end(),
+         [](pair<int, int> a, pair<int, int> b){
         return a.first < b.first;
     });
 

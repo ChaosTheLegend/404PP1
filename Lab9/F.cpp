@@ -16,20 +16,21 @@ int main() {
     getline(cin, s);
 
     for (auto i = s.begin(); i != s.end(); ++i) {
-        char c = *i;
+        char a = *i;
 
-        if(c == '('){
+        if(a == '(') {
             bracket.push('(');
+            continue;
         }
 
-        if(c == ')'){
-
-            if(bracket.empty()) {
+        if(a == ')'){
+            if(bracket.empty()){
                 cout << "NO";
                 return 0;
             }
 
             bracket.pop();
+            continue;
         }
     }
 
