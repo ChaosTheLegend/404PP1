@@ -30,12 +30,8 @@ int main() {
 
     sort(v.begin(), v.end(),
          [](int a, int b){
-            if(a%2 == 0 && b%2 == 0){
-                return a > b;
-            }
-             if(a%2 == 1 && b%2 == 1){
-                 return a < b;
-             }
+             if(a%2 == 0 && b%2 == 0) return true;
+             if(a%2 == 1 && b%2 == 1) return a < b;
 
              if(a%2 == 0) return true;
              if(b%2 == 0) return false;

@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <map>
 
 using namespace std;
 
@@ -13,29 +14,32 @@ void print_vector(vector<int> &v){
     }
 }
 
-
 int main() {
-    vector<int> v;
+
+    map<int,int> count;
+
+    //{1, 1}
+    //{2, 2}
+    //{5, 4}
+
     int n;
     cin >> n;
-
     for (int i = 0; i < n; ++i) {
         int a;
         cin >> a;
-        v.push_back(a);
+        if(count.find(a) != count.end()){
+            count[a]++;
+        }
+        else{
+            count[a] = 1;
+        }
     }
 
-    int k;
-    cin >> k;
+    int s = 0;
 
-    sort(v.begin(), v.end());
-
-    int sum = 0;
-
-    for (auto i = v.end() - k; i != v.end(); ++i) {
-        sum += *i;
+    for (auto i = count.begin(); i != count.end(); ++i) {
+        if(i->second >= 2) s++;
     }
 
-    cout << sum;
-
+    cout << s;
 }

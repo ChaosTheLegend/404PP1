@@ -16,9 +16,9 @@ int main() {
     cin >> n;
 
     for (int i = 0; i < n; ++i) {
-        pair<int,int> p;
-        cin >> p.first >> p.second;
-        int sum = p.first + p.second;
+        int x, y;
+        cin >> x >> y;
+        int sum = x + y;
 
         pair<int,int> a;
         a.first = sum;

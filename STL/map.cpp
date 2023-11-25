@@ -36,8 +36,16 @@ int main() {
     phoneBook["Kaspi"] = 43342;
 
 
+    string k;
+    int v;
+    cin >> k >> v;
+    phoneBook[k] = v;
+
+
+
+
     for (auto i = phoneBook.begin(); i != phoneBook.end(); ++i) {
-        pair<string, int> p = *i;
+        //pair<string, int> p = *i;
 
         cout << i->first << " " << i->second << endl;
     }

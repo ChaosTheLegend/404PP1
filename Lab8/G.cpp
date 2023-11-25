@@ -41,7 +41,7 @@ int main() {
     cin >> k;
 
     int count = 0;
-
+    
     for (auto i = v.begin(); i != v.end(); ++i) {
         int a = *i;
         if(a <= k) continue;

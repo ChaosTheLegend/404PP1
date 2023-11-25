@@ -8,19 +8,24 @@
 using namespace std;
 
 void print_vector(vector<int> &v){
+
     for (auto it = v.begin(); it != v.end(); ++it) {
         cout << *it << " ";
     }
+
+    cout << "\n";
 }
 
 int main() {
+
     vector<int> v = {17, 2, 87, 43, 12};
 
-    sort(v.begin(), v.end());
+    v.size();
 
-    reverse(v.begin(), v.end());
+    print_vector(v);
 
-    auto a = find(v.begin(), v.end(), 10);
+    reverse(v.begin()+1, v.end()-1);
+    //sort(v.begin()+1, v.end());
 
     print_vector(v);
 }

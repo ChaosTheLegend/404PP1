@@ -1,27 +1,22 @@
-#include <string>
 #include <iostream>
+#include <algorithm>
+#include <set>
 #include <stack>
 
 using namespace std;
 
 
-
 int main() {
-    stack<int> a;
+    stack<int> st;
+
+    st.push(4);
+    st.push(3);
+    st.push(2);
 
 
-
-    a.push(5);
-    a.push(3);
-    a.push(2);
-    a.push(7);
-
-    a.pop();
-
-
-    while (!a.empty()) {
-        cout << a.top() << " ";
-        a.pop();
+    while (!st.empty()){
+        cout  << st.top() << " ";
+        st.pop();
     }
 
 }

@@ -25,22 +25,22 @@ void print_vector(vector<int> &v){
 int main() {
     set<int> s;
 
-    s.insert(5);
     s.insert(4);
+    s.insert(5);
     s.insert(3);
+
+
     int b;
     cin >> b;
 
+    auto it = s.find(b);
 
-    auto a = s.find(b);
+    if(it == s.end()) cout << "Not found";
+    else cout << "Found";
 
 
-    int oldSize = s.size();
-    s.insert(b);
-    if(oldSize == s.size()) cout << "Found";
-    else{
-        cout << "Not found";
-        s.erase(b);
-    }
+
+    //print_set(s);
+
 
 }

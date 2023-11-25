@@ -22,15 +22,15 @@ int main() {
 
     sort(v.begin(), v.end(),
          [](pair<int,int> a, pair<int,int> b){
-                    if(a.first < b.first) return true;
-                    if(a.first > b.first) return false;
+                if(a.first < b.first) return true;
+                if(a.first > b.first) return false;
 
-                    return a.second < b.second;
-                }
+                return a.second < b.second;
+            }
          );
 
 
-    for(vector<pair<int,int>> :: iterator i = v.begin(); i != v.end(); ++i){
+    for(auto i = v.begin(); i != v.end(); ++i){
         cout << i->first << " " << i->second << endl;
     }
 }
