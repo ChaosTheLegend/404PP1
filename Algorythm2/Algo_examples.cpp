@@ -137,8 +137,6 @@ void permutation_example(){
     do{
         print_vector(v);
     } while (next_permutation(v.begin(), v.end()));
-
-
 }
 
 int main() {
@@ -150,5 +148,5 @@ int main() {
     //generate_example();
     //random_example();
 
-    permutation_example();
+    //permutation_example();
 }

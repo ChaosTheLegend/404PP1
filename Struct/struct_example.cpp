@@ -8,26 +8,19 @@ struct Human{
 
     string name;
     string surname;
+    long long age;
+    string gender;
 
-    int age;
-    int ageSqr;
-
-    Human(string name1, string surname1, int age1) {
+    Human(string name1, string surname1, long long age1, string gender1){
         name = name1;
         surname = surname1;
         age = age1;
-        ageSqr = age*age;
+        gender = gender1;
     }
+
 };
 
 
-void add_numbers(int a){
-    a+=1;
-}
-
-void add_numbers_ref(int& a){
-    a+=1;
-}
 
 void print_array(int* arr, int n){
     for (int* i = arr; i != (arr + n); ++i) {
@@ -38,13 +31,20 @@ void print_array(int* arr, int n){
 int main(){
     vector<Human> v;
 
-    Human h1 = Human("Askhat", "Ivanov", 72);
+    Human h = Human("Azat", "Zhumagulov",
+                    17,"Male");
 
-    int a = 5;
-    int b = a;
 
-    add_numbers_ref(a);
+    v.push_back(h);
 
-    cout << a;
+    Human b = Human("Crackus", "The terrible",
+                    800, "Wizard");
+
+    v.push_back(b);
+
+    for (auto it = v.begin(); it != v.end() ; ++it) {
+        cout << (*it).name << " " << it->surname << " gender: " << it->gender << "\n";
+    }
+
 
 }
