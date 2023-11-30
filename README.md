@@ -75,6 +75,6 @@ Repo for codes from 404 PP1  course
 - Причина: Нет прав на запуск скомпилированного файла
 - Решение: Перезапустить VSCode от имени администратора
 
-- Ошибка: `g++.exe: fatal error: '-fuse-linker-plugin', but liblto_plugin.dll not foundcompilation terminated.`
+##### Ошибка: `g++.exe: fatal error: '-fuse-linker-plugin', but liblto_plugin.dll not foundcompilation terminated.`
 - Причина: Ошибка при установке MinGW
 - Решение: Удалить MinGW и вернуться к пункту 1
