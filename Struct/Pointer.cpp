@@ -10,11 +10,11 @@ void add_two(int a){
 }
 
 void add_two_ref(int& a){
+
     a+=2;
 }
 
 void add_two_pointer(int* a){
-    a+=1;
 
     (*a)+=2;
 }
@@ -27,9 +27,10 @@ void print_array(int* arr, int n){
 
 int main(){
 
-    int a = 5;
+    int a[] = {1,2};
 
-    add_two_pointer(&a);
+    add_two(a[0]);
 
-    cout << a;
+    cout << a[0] << " " << a[1];
+
 }

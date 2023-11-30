@@ -1,23 +1,23 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <map>
 
 using namespace std;
 
-struct Human{
+struct Student{
 
     string name;
     string surname;
-    long long age;
+    int age;
     string gender;
 
-    Human(string name1, string surname1, long long age1, string gender1){
-        name = name1;
-        surname = surname1;
-        age = age1;
-        gender = gender1;
+    Student(string name, string surname, int age, string gender){
+        this->name = name;
+        this->surname = surname;
+        this->age = age;
+        this->gender = gender;
     }
-
 };
 
 
@@ -29,21 +29,16 @@ void print_array(int* arr, int n){
 }
 
 int main(){
-    vector<Human> v;
 
-    Human h = Human("Azat", "Zhumagulov",
-                    17,"Male");
+    vector<Student> students;
 
+    Student h1 = Student("Ivan", "Yakimov", 22, "Male");
+    students.push_back(h1);
+    Student h2 = Student("Leah", "", 21, "Female");
+    students.push_back(h2);
 
-    v.push_back(h);
-
-    Human b = Human("Crackus", "The terrible",
-                    800, "Wizard");
-
-    v.push_back(b);
-
-    for (auto it = v.begin(); it != v.end() ; ++it) {
-        cout << (*it).name << " " << it->surname << " gender: " << it->gender << "\n";
+    for (auto it = students.begin(); it != students.end(); ++it) {
+        cout << "Student: " << it->name << " " << it->surname << " Age: " << it-> age << " " << it->gender << "\n";
     }
 
 
