@@ -1,7 +1,6 @@
 # 404PP1
 Repo for codes from 404 PP1  course
 
-
 # Как установить G++ под VSCode:
 
 [Видеоинструкция](https://www.youtube.com/watch?si=EyJrYap__GX1fkF3&v=1qN9PQ9wg3E&feature=youtu.be)
@@ -57,6 +56,10 @@ Repo for codes from 404 PP1  course
 - Profit!
 
 ### 6. Частые ошибки
+
+- Ошибка: `'auto' type specifier is a C++11 extension`
+- Причина: Установлен старый компилятор
+- Решение: Обновить компилятор до версии 11, вернуться к пункту 1
 
 - Ошибка: `g++ is not recognized as an internal or external command`
 - Причина: Не прописан путь к компилятору в переменную среды PATH
