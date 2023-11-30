@@ -15,7 +15,9 @@ Repo for codes from 404 PP1  course
 например в `C:\MinGW`, Расположение папки запомнить.
 
 1.2. Установка для MacOS
-- Открыть терминал и ввести команду `sudo port install mingw-w64`
+- Установить [Homebrew](https://brew.sh/)
+- Открыть терминал
+- Написать "brew install gcc"
 
 1.3. Установка для Linux
 - Открыть терминал и ввести команду `sudo apt-get install mingw-w64`
