@@ -15,7 +15,9 @@ Repo for codes from 404 PP1  course
 например в `C:\MinGW`, Расположение папки запомнить.
 
 1.2. Установка для MacOS
-- Открыть терминал и ввести команду `sudo port install mingw-w64`
+- Установить [Homebrew](https://brew.sh/)
+- Открыть терминал
+- Написать `brew install gcc`
 
 1.3. Установка для Linux
 - Открыть терминал и ввести команду `sudo apt-get install mingw-w64`
@@ -57,22 +59,22 @@ Repo for codes from 404 PP1  course
 
 ### 6. Частые ошибки
 
-- Ошибка: `'auto' type specifier is a C++11 extension`
+##### Ошибка: `'auto' type specifier is a C++11 extension`
 - Причина: Установлен старый компилятор
 - Решение: Обновить компилятор до версии 11, вернуться к пункту 1
 
-- Ошибка: `g++ is not recognized as an internal or external command`
+##### Ошибка: `g++ is not recognized as an internal or external command`
 - Причина: Не прописан путь к компилятору в переменную среды PATH
 - Решение: Вернуться к пункту 2
 
-- Ошибка: `g++: error: [Название файла]: No such file or directory`
+##### Ошибка: `g++: error: [Название файла]: No such file or directory`
 - Причина: Не найден файл для компиляции
 - Решение: Проверить, что файл существует и находится в той же папке, что и скомпилированный файл
 
-- Ошибка: `g++: error: [Название скомпилированного файла]: Permission denied`
+##### Ошибка: `g++: error: [Название скомпилированного файла]: Permission denied`
 - Причина: Нет прав на запуск скомпилированного файла
 - Решение: Перезапустить VSCode от имени администратора
 
-- Ошибка: `g++.exe: fatal error: '-fuse-linker-plugin', but liblto_plugin.dll not foundcompilation terminated.`
+##### Ошибка: `g++.exe: fatal error: '-fuse-linker-plugin', but liblto_plugin.dll not foundcompilation terminated.`
 - Причина: Ошибка при установке MinGW
 - Решение: Удалить MinGW и вернуться к пункту 1
