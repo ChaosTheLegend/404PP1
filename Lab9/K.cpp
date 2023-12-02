@@ -4,10 +4,6 @@
 
 using namespace std;
 
-int largestRectangleArea(int N, const vector<int>& heights) {
-
-}
-
 int main() {
     int N;
     cin >> N;
