@@ -13,6 +13,7 @@ int main() {
     vector<pair<int,int>> v;
 
     int n;
+
     cin >> n;
 
     for (int i = 0; i < n; ++i) {
@@ -32,7 +33,8 @@ int main() {
 
     sort(v.begin(), v.end(),
          [](pair<int, int> a, pair<int, int> b){
-        return a.first < b.first;
+             if(a.first == b.first) return a.second < b.second;
+             return a.first < b.first;
     });
 
     // {<0,2>}
@@ -41,7 +43,7 @@ int main() {
 
 
     for (auto i = v.begin(); i != v.end(); ++i) {
-        cout << i->second << " ";
+        cout << "(" << i->first << " " << i->second << ")\n";
     }
 
 }
