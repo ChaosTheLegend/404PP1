@@ -23,6 +23,11 @@ int main() {
             continue;
         }
 
+        if(queue1.empty()){
+            queue1.push_back(a);
+            continue;
+        }
+
         if(queue1.back() == 1){
             queue1.pop_back();
             continue;
