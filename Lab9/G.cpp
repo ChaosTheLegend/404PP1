@@ -24,7 +24,7 @@ int main() {
         }
 
         if(queue1.empty()){
-            queue1.push_back(a);
+            queue1.push_back(1);
             continue;
         }
 

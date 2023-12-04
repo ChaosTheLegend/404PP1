@@ -5,12 +5,14 @@
 #include <vector>
 #include <cmath>
 
+#define ll long long
+
 using namespace std;
 
 int n;
 
-int generate_power(){
-    int pw = pow(n,n);
+ll generate_power(){
+    ll pw = pow(n,n);
     n--;
     return pw;
 }
@@ -19,7 +21,7 @@ int main(){
 
     cin >> n;
 
-    vector<int> v = vector<int>(n+1);
+    vector<ll> v = vector<ll>(n+1);
 
     generate(v.rbegin(), v.rend(), generate_power);
 
