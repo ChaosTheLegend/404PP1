@@ -14,6 +14,22 @@ int sum(vector<int> v){
     return sum;
 }
 
+bool compare_vector(vector<int> a, vector<int> b) {
+    int sum_a = sum(a);
+    int sum_b = sum(b);
+    if (sum_a != sum_b) return sum_a < sum_b;
+
+    if (a.size() != b.size()) return a.size() < b.size();
+
+    for (int i = 0; i < a.size(); ++i) {
+        if (a[i] != b[i]) return a[i] < b[i];
+    }
+
+    return true;
+}
+
+
+
 int main(){
 
 
@@ -39,18 +55,7 @@ int main(){
 
 
     sort(vec.begin(), vec.end(),
-         [](vector<int> a, vector<int> b){
-            int sum_a = sum(a);
-            int sum_b = sum(b);
-            if(sum_a != sum_b) return sum_a < sum_b;
-            if(a.size() != b.size()) return a.size() < b.size();
-
-             for (int i = 0; i < a.size(); ++i) {
-                 if(a[i] != b[i]) return a[i] < b[i];
-             }
-
-             return true;
-    });
+         compare_vector);
 
     for (int i = 0; i < vec.size(); ++i) {
         vector<int> temp = vec[i];

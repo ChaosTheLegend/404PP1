@@ -12,7 +12,7 @@ using namespace std;
 int n;
 
 ll generate_power(){
-    ll pw = pow(n,n);
+    ll pw = powl(n,n);
     n--;
     return pw;
 }

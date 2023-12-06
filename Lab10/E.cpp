@@ -38,7 +38,7 @@ int main() {
 
 
     for (map<string, int> :: iterator it = students.begin(); it != students.end(); ++it) {
-        float percent = float(it->second)/float(total)*100;
+        float percent = (float(it->second)/float(total)*100);
 
         cout << it->first << " " << percent << "\n";
     }
