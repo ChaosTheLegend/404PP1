@@ -20,34 +20,35 @@ int main() {
     int x = 0;
     int y = 0;
     int dir = 0;
+
     int count = 1;
 
     while (count < n*n){
 
         if(dir == 0){
             if(x+1 >= n || arr[x+1][y] != 0){
-                dir+=1;
+                dir++;
                 continue;
             }
         }
 
         if(dir == 1){
             if(y+1 >= n || arr[x][y+1] != 0){
-                dir+=1;
+                dir++;
                 continue;
             }
         }
 
         if(dir == 2){
             if(x-1 < 0 || arr[x-1][y] != 0){
-                dir+=1;
+                dir++;
                 continue;
             }
         }
 
         if(dir == 3){
             if(y-1 < 0 || arr[x][y-1] != 0){
-                dir+=1;
+                dir++;
                 dir%=4;
                 continue;
             }
