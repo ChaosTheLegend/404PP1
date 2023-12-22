@@ -45,11 +45,10 @@ int main() {
             return 0;
         }
 
-
         rotate(s.begin(),s.end()-1, s.end());
         count ++;
     }
 
 
-    cout << "Understandable have a nice day!";
+    cout << "Understandable have a nice day";
 }
